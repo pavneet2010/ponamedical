@@ -1,0 +1,15 @@
+    $('#btnTest').click(function () {
+            debugger;
+            var data=[];
+            tablePatient.rows().eq(0).each(function (index) {
+                
+                var row = tablePatient.row(index);
+                
+                //data = row.data();
+                data.push(row.data())
+                // ... do something with data(), or row.node(), etc
+            });
+            alert(data);
+           
+            return false;
+        });
